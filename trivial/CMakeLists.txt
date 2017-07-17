@@ -29,3 +29,5 @@ set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS} -Wno-deprecated-gpu-targets)
 
 cuda_add_executable(firstcuda first.cu)
 
+cuda_add_executable(properties properties.cu)
+target_link_libraries(properties cuda)
